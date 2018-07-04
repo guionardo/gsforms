@@ -1,0 +1,35 @@
+{
+    "form": {
+        "id": "Identificador",
+        "description": "Nome do form",
+        "version": "Versão do form",
+        "note": "Notas/observações"
+    },
+    "fields": [
+        {
+            "name": "Nome do campo",
+            "description": "Descrição do campo",
+            "tooltip":"Dica com informações do campo",
+            "type": "Tipo do campo",
+            "datasource": "Origem dos dados",
+            "required": "True",
+            "defaultvalue":""
+        },
+        {
+            "name": "campoInt",
+            "description": "Campo Numérico Inteiro",
+            "tooltip":"Dica com informações do campo",
+            "type": "int[0,10]",
+            "required": "True",
+            "defaultvalue":0
+        },
+        {
+            "name": "campoString",
+            "description": "Campo String",
+            "tooltip":"Dica com informações do campo",
+            "type": "string[20]",
+            "required": "True",
+            "defaultvalue":"Texto a vontade"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="gsforms.css">
+    <script src="gsforms.js"></script>
+</head>
+
+<body>
+    <div id="form-container"></div>
+
+    <div class="gsf_container">
+        <div>
+            Header
+        </div>
+        <div>
+            <div>
+                <label>Campo Texto</label>
+                <input type="text" name="campoTexto">
+            </div>
+            <div>
+                <label>Campo Combo</label>
+                <select>
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                </select>
+            </div>
+            <div>
+                <label>Campo Checkbox</label>
+                <input type="checkbox">
+            </div>
+            <div>
+                <label>Quarto campo</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Campo 5</label>
+                <input type="email">
+            </div>
+            <div>
+                <label>Campo 6</label>
+                <input type="password">
+            </div>
+            <div>
+                <label>Número</label>
+                <input type="number">
+            </div>
+        </div>
+        <div>
+            Rodapé
+        </div>
+        <div>
+            <button>Enviar</button>
+            <button>Cancelar</button>
+        </div>
+    </div>
+    <script>
+            GSForms.parseForm("form-container",GSForms.testLayout());
+            //parseForm("form-container", layout);
+    </script>
+</body>
+
+</html>

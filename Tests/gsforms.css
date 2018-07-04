@@ -1,0 +1,93 @@
+.gsf_container {
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    background: #e7eef5;
+/*    height: 200px;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Elementos Header, Body e Footer do container */
+
+.gsf_container>div {
+    flex: 0 1 auto;
+    color: black;
+    box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.24);
+    background: white;
+    margin: 5px;
+    padding-left: 5px;
+}
+
+/* Header */
+
+.gsf_container>div:nth-child(1) {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: teal;
+}
+
+/* Body */
+
+.gsf_container>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Campo */
+
+.gsf_container>div:nth-child(2)>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid gray;
+}
+
+.gsf_container>div:nth-child(2)>div:last-child {
+    border-bottom: none;
+}
+
+/* Label do campo */
+
+.gsf_container>div:nth-child(2)>div>label {
+    flex: 2 1 auto;
+    color: steelblue;
+    margin: 5px;
+}
+
+/* Campo select */
+
+.gsf_container>div:nth-child(2)>div>select,
+.gsf_container>div:nth-child(2)>div>input {
+    flex: 1 1 auto;
+    margin: 5px;
+}
+
+.gsf_container>div:nth-child(2)>div>input[type=checkbox] {
+    flex: 0;
+}
+
+/* Footer */
+
+.gsf_container>div:nth-child(3) {
+    font-size: 0.75em;
+    color: slategray;
+}
+
+/* Botões */
+
+.gsf_container>div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.gsf_container>div:last-child {
+    flex: 0 1 auto;
+    margin: 5px;
+}
+
+.gsf_container>div:last-child>button {
+    height: 2em;
+    margin: 5px;
+}
