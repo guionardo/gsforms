@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="gsforms.css">
-    <script src="gsforms.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/gsforms.css">
+
 </head>
 
 <body>
     <div id="form-container"></div>
 
-    <div class="gsf_container">
+    <!--   <div class="gsf_container">
         <div>
             Header
         </div>
@@ -59,9 +59,12 @@
             <button>Cancelar</button>
         </div>
     </div>
+-->
+    <script src="../js/gsforms.js"></script>
+    <script src="../js/gsforms_aux.js"></script>
     <script>
-            GSForms.parseForm("form-container",GSForms.testLayout());
-            //parseForm("form-container", layout);
+        GSForms.seti18("us");
+        GSForms.parseForm("form-container", testLayout());            
     </script>
 </body>
 
